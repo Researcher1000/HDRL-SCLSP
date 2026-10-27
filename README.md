@@ -152,13 +152,7 @@ The calibrated thresholds of every instance, used by the HDRL warm start, are st
 
 - Seeds: training 123, validation 10,000, test 12. Global seeds and deterministic PyTorch settings are set at the start of training and testing.
 - The C++ AMBS code draws one independent random stream per trajectory. The streams are reproducible but not bit-identical to those of a NumPy implementation, so small differences in the average cost are expected.
-- Training results can still vary slightly across hardware (CPU or GPU, library versions). Testing the provided `.pt` files with the default settings follows the same protocol used to obtain the HDRL costs reported in the paper (Tables 3 and 4).
+- Training results can still vary across hardware (CPU or GPU, library versions). Testing the provided `.pt` files with the default settings follows the same protocol used to obtain the HDRL costs reported in the paper.
 - Trained models are stored per instance. Both files of the same instance (`high_joint_best.pt` and `low_joint_best.pt`) are needed together, and they must be used with the instance they were trained on.
 
 ---
-
-## Citation
-
-If you use this code, please cite the article (full reference to be added after publication):
-
-> Hierarchical deep reinforcement learning for the capacitated lot-sizing problem: From stochastic multi-item to sequence-dependent setups.
