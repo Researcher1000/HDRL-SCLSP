@@ -8,7 +8,7 @@ The repository reproduces the Hierarchical Deep Reinforcement Learning (HDRL) fr
 
 With this repository you can:
 
-- **train** the hierarchical PPO agents on any of the 40 benchmark instances of the paper,
+- **train** the hierarchical PPO agents on any of the benchmark instances of the paper,
 - **test** the trained models provided in `Trained Models/` with the evaluation protocol of the paper,
 - **run the AMBS and AMBS-SD benchmark heuristics** (calibration and evaluation).
 
