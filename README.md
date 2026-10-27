@@ -106,7 +106,7 @@ Main settings of the instance cell:
 
 Training details (defaults): 8,000 PPO updates, episodes of 256 periods, seeds 123 (training) and 10,000 (validation). Policies are validated periodically on 50 independent runs and the best checkpoint is stored.
 
-Everything produced by a run is written to `runs/<exp_name>/`, where `<exp_name>` encodes the instance (e.g. `pruebas_semidef_config1_ID_1.5_K10_covlow_cf1.1`):
+Everything produced by a run is written to `runs/<exp_name>/`, where `<exp_name>` encodes the instance:
 
 - `high_joint_best.pt`, `low_joint_best.pt`: best checkpoints of the high-level and low-level agents,
 - `high_warmstart.pt`: cached warm-start weights (when `WARM_START = True`),
