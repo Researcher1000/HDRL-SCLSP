@@ -120,7 +120,7 @@ Approximate cost on a single Google Colab Pro instance (high-RAM runtime): about
 
 The test cell evaluates the policy with the protocol used in the paper: **10,000 independent trajectories** of 228 periods, of which the first 128 are discarded as warm-up (costs are averaged over the remaining 100), with **greedy** action selection, test seed base 12, on CPU. It prints the mean cost per period.
 
-**Option A: test the models of this repository**
+**Option A: test the models in this repository that reproduce the results reported in the paper.**
 
 1. Download the two files of the instance you want from `Trained Models/`, for example
    `Trained Models/Case I SCLSP/1.5/high_joint_best.pt` and `low_joint_best.pt`.
