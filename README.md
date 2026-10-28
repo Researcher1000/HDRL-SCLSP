@@ -89,7 +89,7 @@ pip install numpy torch matplotlib tqdm wandb pybind11
 
 Run the cells of `main.ipynb` in order. For a new run you normally only edit **`INSTANCE_ID`**, the first setting of the instance cell; everything else has working defaults.
 
-1. **Instance and hyperparameters.** Set `INSTANCE_ID` (for instance `"1.5"` or `"2.9"`) and run the cell. The ID selects the problem (`1.x` = S-CLSP, Case I; `2.x` = S-CLSP-SD, Case II), builds the instance and all hyperparameters (`HYP`) and picks the matching environment and trainer. Nothing is trained in this cell.
+1. **Instance and hyperparameters.** Set `INSTANCE_ID` (for instance `"1.5"` or `"2.9"`) and run the cell. The ID selects the problem (`1.x` = SCLSP, Case I; `2.x` = SCLSP-SD, Case II), builds the instance and all hyperparameters (`HYP`) and picks the matching environment and trainer. Nothing is trained in this cell.
 2. **Train.** Trains the high-level and low-level agents with PPO on the selected instance.
 3. **Test.** Evaluates the trained pair (see the next section).
 
