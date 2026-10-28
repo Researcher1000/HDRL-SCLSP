@@ -141,7 +141,7 @@ The two AMBS notebooks calibrate and evaluate the benchmark heuristic of the pap
 
 The first two cells write (`%writefile`, so a Jupyter or Colab kernel is needed) and compile (`g++ -O3 -fopenmp` with `pybind11`) a C++ extension, `ambs_core` or `ambs_sd_core`, in the working directory. The last cell runs the grid search over the thresholds (`Bmin`, `Hmax`, `Zmax`; plus the setup-cost penalty `lam` for AMBS-SD) with 1,000 trajectories per configuration, and then evaluates the best configuration with the same protocol as the HDRL test (10,000 trajectories, 128 + 100 periods, seed base 12). It prints the thresholds found and the average cost, broken down into holding, backorder and setup costs.
 
-- **`AMBS_Heuristic_SCLSP.ipynb`**: AMBS heuristic for the S-CLSP (Case I).
+- **`AMBS_Heuristic_SCLSP.ipynb`**: AMBS heuristic for the SCLSP (Case I).
 - **`AMBS_Heuristic_SCLSP_SD.ipynb`**: AMBS-SD, the extension to sequence-dependent setups used in Case II (production sequencing by cheapest insertion and a setup-cost-aware product selection penalty `lam`). With sequence-independent setups and `lam = 0` it makes the same decisions as AMBS.
 
 The calibrated thresholds of every instance, used by the HDRL warm start, are stored in `AMBS_PARAMS_REGISTRY` in `CLSP_HDRL/warm_start.py`.
