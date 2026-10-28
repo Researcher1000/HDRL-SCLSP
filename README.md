@@ -45,7 +45,7 @@ With this repository you can:
 
 All instances share mean demand μ = 4, holding cost h = 1, backorder cost b = 9 and unit batch size. Demand is **low** variability, U{3, 5}, or **high** variability, U{0, 8}; cf is the capacity factor (1.1 = tight, 1.5 = loose). Within every block of four IDs the order is: (cf 1.1, low), (cf 1.5, low), (cf 1.1, high), (cf 1.5, high).
 
-**Case I, S-CLSP (`1.1` – `1.24`)**
+**Case I, SCLSP (`1.1` – `1.24`)**
 
 | K (products) | IDs |
 |---|---|
@@ -56,7 +56,7 @@ All instances share mean demand μ = 4, holding cost h = 1, backorder cost b = 9
 | 25 | 1.17 – 1.20 |
 | 30 | 1.21 – 1.24 |
 
-**Case II, S-CLSP-SD (`2.1` – `2.16`)**, sequence-dependent setup times and costs. Type A: two families. Type B: five families arranged on a line.
+**Case II, SCLSP-SD (`2.1` – `2.16`)**, sequence-dependent setup times and costs. Type A: two families. Type B: five families arranged on a line.
 
 | Setup structure | K | IDs |
 |---|---|---|
